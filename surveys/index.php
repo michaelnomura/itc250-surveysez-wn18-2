@@ -97,7 +97,7 @@ if(mysqli_num_rows($result) > 0)
 	{# process each row
         echo'
             <tr>
-                <td><a href="' . VIRTUAL_PATH . 'surveys/survey_view_new.php?id=' . (int)$row['SurveyID'] . '">' . dbOut($row['Title']) . '</a></td>
+                <td><a href="' . VIRTUAL_PATH . 'surveys/survey_view.php?id=' . (int)$row['SurveyID'] . '">' . dbOut($row['Title']) . '</a></td>
                 <td>' . dbOut($row['AdminName']) . '</td>
                 <td>' . dbOut($row['DateAdded']) . '</td>
             </tr>
